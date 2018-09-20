@@ -84,23 +84,6 @@ animation-name: rotate;
                    
 }
             
-		#videosList {
- max-width: 640px; 
-  overflow: hidden;
-}
-
-.video {
-	
-	  background-image: url('https://img.youtube.com/vi/QHaZrZe29KQ/0.jpg');
-  height: 330px;
-  width: 600px;
-  margin-bottom: 50px;
-}
-
-/* Hide Play button + controls on iOS */
-video::-webkit-media-controls {
-    display:none !important;
-}
 		
             @keyframes rotate 
 {
@@ -173,19 +156,10 @@ nav ul {
 <br>
 
 
-<div id="videosList">           
-
-<div class="video">
-    <video class="thevideo" loop preload="none">
-      <source <source src="videoplayback.mp4" type="video/mp4">
-      <source <source src="videoplayback.webm" type="video/webm">
-    Your browser does not support the video tag.
-    </video>
-  </div>
-  Hover mouse over video. Desktop only [ Obviously! ;) ]
-</div>
-
-
+<video width="320" height="240" controls>
+  <source src="videoplayback.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 <br> <center>
 <br>
